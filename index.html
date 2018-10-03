@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Cheech's Pizza</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- our script to modify the cheech's pizza page-->
+    <script src="action.js"></script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,20 +30,29 @@
   </head>
   <body>
     <h1>Cheech's Pizza</h1>
-    <form action="/action.js"> <!-- use this name for the Javascript file "action.js" -->
+    <form action="output.js"> <!-- use this name for the Javascript file "output.js" -->
         First name: <input type="text" name="fname"><br>
         Last name: <input type="text" name="lname"><br>
         Phone number: <input type="text" name="phonenum"><br>
-        <!-- Selection Box to order pizza-->
-        <select name="pizza" id="pizzaselect">
-            <option value="pepperoni">Pepperoni</option>
-            <option value="sausage">Sausage</option>
-            <option value="ham">Ham</option>
-            <option value="cheese">Cheese</option>
-            <option value="bacon">Canadian Bacon</option>
+        <!-- Selection Box for number of pizzas to order -->
+        <select name="numPizzas" id="numPizzaSelect">
+          <script>
+            for(i=0; i<11; i++){
+              document.write('<option value="' + i + '">' + i + '</option>');
+            }
+          </script>
+
+        </select>
+        <!-- Selection Box to order pizza type-->
+        <select name="pizzaStyle" id="pizzaselect"> 
+            <script>
+              for(i=0; i<pizzaType.length;i++){
+                document.write('<option value="' + pizzaType[i] + '">' + pizzaType[i] + '</option>');
+              }
+            </script>
         </select><br>
         <!-- End of Selection box-->
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class=".button-defualt">
       </form>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
