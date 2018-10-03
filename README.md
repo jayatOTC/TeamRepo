@@ -45,11 +45,11 @@ ________________________________________________________________________________
 ## Ken:
 - [ ] Bootstrap setup
 - [x] Include Text Box for Name and Phone Number
-- [ ] Create a selection box which allows a customer to order 1-10 pizzas. 
+- [x] Create a selection box which allows a customer to order 1-10 pizzas. 
 
 ## Jay: 
-- [ ] Create an array of a minimum of 5 pizza types.
-- [ ] Use Javascript to write the selection items in the selection list.
+- [x] Create an array of a minimum of 5 pizza types. (Ken has you covered)
+- [x] Use Javascript to write the selection items in the selection list. (Ken has you covered)
 
 ## Isaiah:
 - [ ] when the customer has entered all the data, the customer will click an order button.  There should be an addEventListener that produces a summary of the order, and displays the required info on the form.
